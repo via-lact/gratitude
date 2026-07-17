@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gratitude</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+.scroll{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    font-size:2rem;
+    font-weight:400;
+    animation:credits 25s linear infinite;
+}
+
+.name{
+    margin:30px 0;
+}
+
+@keyframes credits{
+    from{
+        transform:translateY(100%);
+    }
+    to{
+        transform:translateY(-100%);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="scroll">
+        <div class="name">John Doe</div>
+        <div class="name">Jane Smith</div>
+        <div class="name">Michael Brown</div>
+        <div class="name">Emily Johnson</div>
+        <div class="name">David Wilson</div>
+        <div class="name">Sophia Davis</div>
+        <div class="name">Daniel Miller</div>
+        <div class="name">Olivia Taylor</div>
+        <div class="name">Thank You ❤️</div>
+    </div>
+</div>
+
+</body>
+</html>
